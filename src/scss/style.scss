@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "catamaran";
+    src: url(fonts/catamaran/static/Catamaran-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "lato";
+    src: url(fonts/lato/Lato-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "mulish";
+    src: url(fonts/mulish/Mulish-Italic-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+h1 {
+    font-family: "catamaran", Helvetica, Arial, sans-serif; 
+}
+section {
+    font-family: "mulish", Helvetica, Arial, sans-serif; 
+}
+button {
+    font-family: "lato", Helvetica, Arial, sans-serif; 
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+nav {
+    font-family: "lato", Helvetica, Arial, sans-serif;
+    background: #fff;
+    box-shadow: 0 0 10px #aaa;
+    display: flex;
+    justify-content: center;   
+    &__sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    }
+    
+
+    
+    div {
+        display: flex;
+        align-items: flex-start;
+        //flex-direction: row-reverse;
+        width: 100%;
+
+        @media screen and (min-width: 40em) {            
+                align-items: center;            
+        }
+        a {
+            color: rgb(128, 128, 128);
+            text-decoration: none;
+            align-items: flex-start;
+        }
+
+        a:hover {
+            color: #ffffff;
+
+        }
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked + ul {
+                display: flex;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 1.5rem;
+            width: 1.5rem;
+            padding: 0.75rem;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: 40rem) {                
+                    display: none;                
+            }
+        }
+
+        span {
+            background: #222;
+            display: block;
+            height: 2px;
+            width: 1.5rem;
+         }
+        
+        ul {
+            display: none;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            list-style: none;
+
+            @media screen and (min-width: 40em) {                
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;                
+            }
+
+            li {
+                text-align: center;
+
+                a {
+                    display: block;
+                    
+                    color: #222;    
+                    line-height: 1rem;
+                    padding: 1rem;
+                    text-decoration: none;
+                    
+                    &:hover {
+                        background: #efefef;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+footer div a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+footer {
+background-color: rgb(34, 34, 34);
+font-family: mulish, Helvetica, Arial, sans-serif;
+text-align: center;
+
+}
+footer div {
+    color: rgb(101, 101, 101)
+}
+footer div a:hover {
+    color: rgb(230, 230, 20)
+    }
+
+section {
+    display: flex;
+    //align-items: flex-center;
+    color: rgb(253, 193, 64);
+    height: 100reg;
+}
+.weLove {
+text-align: center;
+    text-align: center;
+    background-color:  rgba(253, 199, 64, 0.9);
+    color: black;
+    
+}
+.weLove:hover {
+text-align: center;
+    text-align: center;
+    background-color:  rgb(253, 199, 64);
+    color: black;
+}
+footer div div a {
+    color: rgb(101, 101, 101);
+   
+}
+footer div div a:hover {
+    color: rgb(253, 199, 64);
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 25px;
+
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 25px;
+  }
+  .fa-google-plus {
+      background: rgba(221, 75, 57);
+      color: white;
+      border-radius: 25px;
+    }
+
+  
